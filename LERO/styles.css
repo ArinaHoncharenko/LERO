@@ -1,13 +1,11 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styles */
 body {
-    font-family: "Montserrat", sans-serif; /* Використання шрифту Montserrat для основного тексту */
+    font-family: "Montserrat", sans-serif; 
     font-size: 16px;
     color: #322E2E;
 }
@@ -63,13 +61,13 @@ nav ul li a:hover {
     color: #786E6E;
 }
 
-/* Visual block styles */
+/* стилі віз блоку */
 .visual-block {
-    display: flex; /* Рядкове направлення */
-    justify-content: space-between; /* Розподіл між елементами */
-    align-items: center; /* Вирівнювання по вертикалі */
-    background-image: url('/images/background.png'); /* Задаємо зображення фону */
-    background-size: cover; /* Розмір фонового зображення */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('/images/background.png');
+    background-size: cover;
     background-position: center;
     color: #FCFCFC;
     height: 100vh;
@@ -135,41 +133,41 @@ nav ul li a:hover {
 
 .menu-items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Автоматично пристосовувати кількість колонок до доступного простору */
-    gap: 80px; /* Відступ між елементами */
-    justify-content: center; /* Вирівнювання елементів по центру */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 80px;
+    justify-content: center;
 }
 
 .menu-item {
-    padding: 30px; /* Збільшуємо внутрішній відступ */
+    padding: 30px;
     border: 1px solid #ddd;
-    border-radius: 10px; /* Збільшуємо радіус кутів */
+    border-radius: 10px;
 }
 
 .menu-item img {
     width: 100%;
-    border-radius: 10px; /* Збільшуємо радіус кутів */
-    margin-bottom: 20px; /* Збільшуємо відступ */
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .menu-item h3 {
-    font-size: 28px; /* Збільшуємо розмір шрифту */
-    margin-bottom: 15px; /* Збільшуємо відступ */
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
 .menu-item p {
-    font-size: 18px; /* Збільшуємо розмір шрифту */
-    margin-bottom: 15px; /* Збільшуємо відступ */
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 
 .add-to-cart {
     background-color: #86D074;
     color: #FFF;
-    padding: 12px 24px; /* Збільшуємо відступи */
+    padding: 12px 24px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 18px; /* Збільшуємо розмір шрифту */
+    font-size: 18px;
     width: 100%;
 }
 
@@ -182,26 +180,26 @@ nav ul li a:hover {
     background-image: url('/images/background2.png');
     background-size: cover;
     background-position: center;
-    display: flex; /* Використовуємо флексбокс для вирівнювання */
-    justify-content: center; /* Вирівнюємо по центру горизонтально */
-    align-items: center; /* Вирівнюємо по центру вертикально */
-    text-align: center; /* Вирівнюємо текст по центру */
-    padding: 120px 20px; /* Додаємо відступи */
-    color: #FFF; /* Колір тексту */
-    flex-direction: column; /* Вирівнюємо блоки вертикально */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 20px;
+    color: #FFF;
+    flex-direction: column;
     height: calc(100vh - 89px);
     gap: 100px;
 }
 
 .info-block h2 {
-    font-size: 48px; /* Розмір шрифту заголовка */
+    font-size: 48px;
 }
 
 .info-text {
-    font-size: 24px; /* Розмір шрифту тексту */
-    line-height: 1.6; /* Міжрядковий інтервал */
+    font-size: 24px;
+    line-height: 1.6;
     width: 65vw;
-    margin-top: 20px; /* Відступ від заголовка */
+    margin-top: 20px;
 }
 
 /* блок команди */
@@ -216,15 +214,14 @@ nav ul li a:hover {
 }
 
 .team-content {
-    flex: 1; /* Розтягуємо текстовий блок, щоб він займав залишок доступного простору */
-    padding-left: 320px; /* Відступи від зображення */
+    flex: 1;
+    padding-left: 320px;
 }
 
 .team-content h2 {
     font-size: 48px;
     margin-bottom: 80px;
     width: 40vw;
-    font-family: "Neucha", cursive;
 }
 
 .team-content p {
@@ -298,13 +295,13 @@ button:hover {
     background-color: #A6DC98;
 }
 
-
 /* блок ресторанів */
 .restaurants-container {
     width: 100%;
     padding: 80px 80px;
 }
-.restaurants-container h2{
+
+.restaurants-container h2 {
     font-size: 48px;
     font-family: "Neucha", cursive;
     margin-bottom: 60px;
@@ -313,13 +310,13 @@ button:hover {
 
 .restaurants-block {
     display: flex;
-    flex-wrap: wrap; /* Дозволяє карткам ресторанів переноситися на новий рядок */
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 80px;
 }
 
 .restaurant-card {
-    width: 25vw; /* Ширина кожної картки ресторану (50% мінус відступи між ними) */
+    width: 25vw;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -403,4 +400,3 @@ button:hover {
     margin-bottom: 16px;
     line-height: 2.2;
 }
-
