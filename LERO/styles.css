@@ -1,0 +1,406 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: "Montserrat", sans-serif; /* Використання шрифту Montserrat для основного тексту */
+    font-size: 16px;
+    color: #322E2E;
+}
+
+/* Header styles */
+.header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 90vw;
+}
+
+.logo {
+    font-size: 32px;
+    font-family: "Neucha", cursive;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #322E2E;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #786E6E;
+}
+
+/* Visual block styles */
+.visual-block {
+    display: flex; /* Рядкове направлення */
+    justify-content: space-between; /* Розподіл між елементами */
+    align-items: center; /* Вирівнювання по вертикалі */
+    background-image: url('/images/background.png'); /* Задаємо зображення фону */
+    background-size: cover; /* Розмір фонового зображення */
+    background-position: center;
+    color: #FCFCFC;
+    height: 100vh;
+}
+
+.visual-block .container {
+    min-width: 100%;
+    margin: 40px auto;
+    padding-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.visual-block-text {
+    max-width: 600px;
+    padding-left: 120px; 
+}
+
+.visual-block-text h2 {
+    font-size: 90px;
+    margin-bottom: 40px;
+    font-family: "Neucha", cursive; 
+}
+
+.visual-block-text p {
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.button {
+    background-color: #86D074;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.button:hover {
+    background-color: #A6DC98;
+}
+
+.visual-block .button{
+    font-size: 24px;
+    padding: 20px 30px;
+}
+
+/* Блок меню */
+.menu-block {
+    background-color: #FFF;
+    text-align: center;
+    padding:80px 80px;
+}
+
+.menu-block h2 {
+    font-size: 48px;
+    margin-bottom: 80px;
+    font-family: "Neucha", cursive;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Автоматично пристосовувати кількість колонок до доступного простору */
+    gap: 80px; /* Відступ між елементами */
+    justify-content: center; /* Вирівнювання елементів по центру */
+}
+
+.menu-item {
+    padding: 30px; /* Збільшуємо внутрішній відступ */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Збільшуємо радіус кутів */
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px; /* Збільшуємо радіус кутів */
+    margin-bottom: 20px; /* Збільшуємо відступ */
+}
+
+.menu-item h3 {
+    font-size: 28px; /* Збільшуємо розмір шрифту */
+    margin-bottom: 15px; /* Збільшуємо відступ */
+}
+
+.menu-item p {
+    font-size: 18px; /* Збільшуємо розмір шрифту */
+    margin-bottom: 15px; /* Збільшуємо відступ */
+}
+
+.add-to-cart {
+    background-color: #86D074;
+    color: #FFF;
+    padding: 12px 24px; /* Збільшуємо відступи */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Збільшуємо розмір шрифту */
+    width: 100%;
+}
+
+.add-to-cart:hover {
+    background-color: #A6DC98;
+}
+
+/* Блок про нас */
+.info-block {
+    background-image: url('/images/background2.png');
+    background-size: cover;
+    background-position: center;
+    display: flex; /* Використовуємо флексбокс для вирівнювання */
+    justify-content: center; /* Вирівнюємо по центру горизонтально */
+    align-items: center; /* Вирівнюємо по центру вертикально */
+    text-align: center; /* Вирівнюємо текст по центру */
+    padding: 120px 20px; /* Додаємо відступи */
+    color: #FFF; /* Колір тексту */
+    flex-direction: column; /* Вирівнюємо блоки вертикально */
+    height: calc(100vh - 89px);
+    gap: 100px;
+}
+
+.info-block h2 {
+    font-size: 48px; /* Розмір шрифту заголовка */
+}
+
+.info-text {
+    font-size: 24px; /* Розмір шрифту тексту */
+    line-height: 1.6; /* Міжрядковий інтервал */
+    width: 65vw;
+    margin-top: 20px; /* Відступ від заголовка */
+}
+
+/* блок команди */
+.team-block {
+    display: flex;
+    align-items: center;
+}
+
+.team-image img {
+    height: 80vh;
+    margin-top: calc(20vh - 89px);
+}
+
+.team-content {
+    flex: 1; /* Розтягуємо текстовий блок, щоб він займав залишок доступного простору */
+    padding-left: 320px; /* Відступи від зображення */
+}
+
+.team-content h2 {
+    font-size: 48px;
+    margin-bottom: 80px;
+    width: 40vw;
+    font-family: "Neucha", cursive;
+}
+
+.team-content p {
+    font-size: 24px;
+    margin-bottom: 80px;
+    width: 40vw;
+}
+
+.team-content .button {
+    background-color: #86D074;
+    color: #FFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.team-content .button:hover {
+    background-color: #A6DC98;
+}
+
+/* блок форми відгуків */
+.review-form {
+    width: 100%;
+    margin: 0 0;
+    padding: 80px 80px;
+    background-color: #F9F9F9;
+}
+
+.review-form h2 {
+    font-size: 48px;
+    font-family: "Neucha", cursive;
+    margin-bottom: 60px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+button {
+    background-color: #86D074;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px !important;
+}
+
+button:hover {
+    background-color: #A6DC98;
+}
+
+
+/* блок ресторанів */
+.restaurants-container {
+    width: 100%;
+    padding: 80px 80px;
+}
+.restaurants-container h2{
+    font-size: 48px;
+    font-family: "Neucha", cursive;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.restaurants-block {
+    display: flex;
+    flex-wrap: wrap; /* Дозволяє карткам ресторанів переноситися на новий рядок */
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.restaurant-card {
+    width: 25vw; /* Ширина кожної картки ресторану (50% мінус відступи між ними) */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.restaurant-info {
+    padding: 20px;
+}
+
+.restaurant-info p {
+    margin-bottom: 10px;
+}
+
+.working-hours p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.working-hours ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.working-hours ul li {
+    margin-bottom: 5px;
+}
+
+.restaurant-info .phone {
+    font-weight: bold;
+}
+
+/* футер */
+.footer {
+    background-image: url('/images/background.png');
+    background-size: cover;
+    background-position: center;
+    padding: 48px 100px;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    text-align: left;
+}
+
+.footer-links a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo p {
+    font-size: 40px;
+    color: #F1F7EF;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 16px 28px 16px;
+}
+
+.footer-contacts {
+    text-align: left;
+}
+
+.footer-contacts p {
+    margin-bottom: 16px;
+    line-height: 2.2;
+}
+
